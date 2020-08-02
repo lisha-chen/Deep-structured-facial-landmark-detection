@@ -594,7 +594,7 @@ class FAN():
             loss = metric.softmax_nll_with_logits(logits=output[i], labels=labels)
             tf.add_to_collection('losses', loss)
 
-            loss_gaussian = 0.5*metric.multi_gaussian_fullcov_nll(mean=mean[i], 
+            loss_gaussian = 1*metric.multi_gaussian_fullcov_nll(mean=mean[i], 
                 inv_cov=inv_cov[i], logdet_invcov=logdet_invcov[i], labels=labels)
             tf.add_to_collection('losses', loss_gaussian)
             L1_loss = 2*metric.L1_mean_loss(mean=mean[i], labels=labels)
