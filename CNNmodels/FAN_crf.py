@@ -513,8 +513,7 @@ class FAN():
 
         y_diff = tf.subtract(outlabels_, mean_)
         loss = tf.reduce_mean(tf.matmul(tf.matmul(y_diff, precision_, transpose_a=True), y_diff) - \
-                2*tf.reduce_sum(tf.log(tf.matrix_diag_part(chol)), -1)) + tf.reduce_mean(
-                tf.matmul(y_diff,y_diff, transpose_a=True)) + 1000*tf.reduce_mean(tf.keras.metrics.mae(outlabels_, mean_))
+                2*tf.reduce_sum(tf.log(tf.matrix_diag_part(chol)), -1)) 
         # tf.add_to_collection('losses', loss)
         return loss, mean_, precision_
 
