@@ -15,8 +15,6 @@ x = np.linspace(0, dim1-1, dim1, dtype=np.float32)
 y = np.linspace(0, dim2-1, dim2, dtype=np.float32)
 mesh = np.transpose(np.array(np.meshgrid(x, y)).reshape((2,-1)))
 
-kernel_h = 1.0
-
 down_scale = 255./63.
 
 epsilon = 1e-5
