@@ -32,7 +32,7 @@ tf.app.flags.DEFINE_integer("num_lmks",
                     default=68,
                     help="Number of landmarks in prediction")
 tf.app.flags.DEFINE_integer("eval_num",
-                    default=600,
+                    default=689,
                     help="Number of evaluation faces.")
 tf.app.flags.DEFINE_float("offset",
                     default=0.,
