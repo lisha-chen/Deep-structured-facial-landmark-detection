@@ -18,7 +18,6 @@ mesh = np.transpose(np.array(np.meshgrid(x, y)).reshape((2,-1)))
 down_scale = 255./63.
 
 epsilon = 1e-5
-# tfd = tfp.distributions
 
 
 #------------------------------------------------------------------------------
