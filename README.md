@@ -12,7 +12,7 @@ scipy
 
 [Model for 300wtrain protocol](https://www.dropbox.com/sh/c47tzhdssrg9bjl/AADi0cMvhEnCPMTFPrEkuNrba?dl=0)
 
-[Model for 300wlptrain protocol]https://www.dropbox.com/sh/itwpw91gqxtfvw9/AABED2aIXpQy-4wxk9igxMGza?dl=0
+[Model for 300wlptrain protocol](https://www.dropbox.com/sh/itwpw91gqxtfvw9/AABED2aIXpQy-4wxk9igxMGza?dl=0)
 
 ### License
 This code is only for research purpose.
