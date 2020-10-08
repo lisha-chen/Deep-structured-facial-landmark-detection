@@ -55,6 +55,7 @@ Please follow the GPL-3.0 License if you use the code.
 
 The CNN backbone uses [FAN](https://github.com/1adrianb/face-alignment). It is a direct tensorflow reimplementation of the provided pytorch code.
 The 3D model construction uses [non-rigid structure from motion](https://cs.stanford.edu/~ltorresa/projects/learning-nr-shape/) and [CE-CLM](https://github.com/TadasBaltrusaitis/OpenFace/tree/master/model_training/pdm_generation).
-We thank the authors for providing the code. Please cite their works and ours if you use the code.
+The 300wlptrain protocol uses [300W-LP](http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/3DDFA/main.htm) for pre-training.
+We thank the authors for providing the code and data. Please cite their works and ours if you use the code or data.
 
 
