@@ -37,7 +37,7 @@ Please follow the GPL-3.0 License if you use the code.
 
 ### Citation
 
-@incollection{NIPS2019_8515,
+>@incollection{NIPS2019_8515,
 title = {Deep Structured Prediction for Facial Landmark Detection},
 author = {Chen, Lisha and Su, Hui and Ji, Qiang},
 booktitle = {Advances in Neural Information Processing Systems 32},
