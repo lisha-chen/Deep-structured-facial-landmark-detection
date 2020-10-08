@@ -489,12 +489,12 @@ class FAN():
         Joint inference for CRF given unary and pairwise
         '''    
         # mu: N C 2
-        # cov: N C 2 2
+        # inv_cov: N C 2 2
         # labels: N C 2
         # muij: N 2 C C / N 2 i j
         # cij: 2 2 C C
         # inv_cov_pair: 2 2 C C
-        # (mean[3], inv_cov[3], labels, yij, cij, inv_cov_pair)
+        # (mean[-1], inv_cov[-1], labels, yij, cij, inv_cov_pair)
         
         # size
         cij = self.cij
@@ -529,7 +529,7 @@ class FAN():
 
     def loss_joint(self, mean_, labels, chol, precision_):
         '''
-        joint loss function
+        Joint loss function
         '''
         size_mean = [tf.shape(labels)[0], 2*tf.shape(labels)[1], 1]
         outlabels = labels / down_scale
@@ -637,7 +637,7 @@ class FAN():
 
     def loss_total_crf_unary(self, output, labels, mean, inv_cov, logdet_invcov):
         '''
-        unary loss function
+        Unary loss function
         '''
         # labels N C 2
         for i in range(len(output)):
