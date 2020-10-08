@@ -14,5 +14,5 @@ scipy
 
 
 ### License
-This code is only for research purpose
-Please follow the GPL-3.0 License if you use the code
+This code is only for research purpose.
+Please follow the GPL-3.0 License attached if you use the code.
