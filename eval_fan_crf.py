@@ -15,8 +15,6 @@ from CNNmodels import FAN_crf_pred
 
 import scipy.io
 
-import skimage.io
-
 #%%----------------------------------------------------------------
 
 
