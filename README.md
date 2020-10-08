@@ -39,7 +39,8 @@ Please follow the GPL-3.0 License if you use the code.
 
 ## Citation
 
->@incollection{NIPS2019_8515,
+```
+@incollection{NIPS2019_8515,
     title =     {Deep Structured Prediction for Facial Landmark Detection},
     author =    {Chen, Lisha and Su, Hui and Ji, Qiang},
     booktitle = {Advances in Neural Information Processing Systems 32},
@@ -48,14 +49,15 @@ Please follow the GPL-3.0 License if you use the code.
     publisher = {Curran Associates, Inc.},
     url = {http://papers.nips.cc/paper/8515-deep-structured-prediction-for-facial-landmark-detection.pdf}
   }
-
+```
 
 
 ## Acknowledgement
 
-The CNN backbone uses [FAN](https://github.com/1adrianb/face-alignment). It is a direct tensorflow reimplementation of the provided pytorch code.
-The 3D model construction uses [non-rigid structure from motion](https://cs.stanford.edu/~ltorresa/projects/learning-nr-shape/) and [CE-CLM](https://github.com/TadasBaltrusaitis/OpenFace/tree/master/model_training/pdm_generation).
-The 300wlptrain protocol uses [300W-LP](http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/3DDFA/main.htm) for pre-training.
+- The CNN backbone uses [FAN](https://github.com/1adrianb/face-alignment). Our CNN backbone is a direct tensorflow reimplementation of the provided pytorch code.
+- The 3D model construction uses [non-rigid structure from motion](https://cs.stanford.edu/~ltorresa/projects/learning-nr-shape/) and [CE-CLM](https://github.com/TadasBaltrusaitis/OpenFace/tree/master/model_training/pdm_generation).
+- The 300wlptrain protocol uses [300W-LP](http://www.cbsr.ia.ac.cn/users/xiangyuzhu/projects/3DDFA/main.htm) for pre-training.
+
 We thank the authors for providing the code and data. Please cite their works and ours if you use the code or data.
 
 
