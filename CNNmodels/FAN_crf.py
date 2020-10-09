@@ -604,10 +604,10 @@ class FAN():
         mean = self.compute_mean(logits)
         inv_cov, logdet_invcov= self.learn_inv_cov()
     
-        muij_, pts2d_re_, M_ = self.zeta_iterative(pts2d=mean[3])
+        muij_, pts2d_re_, M_ = self.zeta_iterative(pts2d=mean[-1])
         
-        joint_mean, _, self.precision = self.crf_joint(mean[3], inv_cov[3], muij_)
-        self.loss_joint, self.joint_mean = self.joint_iterative(mean[3], inv_cov[3], 
+        joint_mean, _, self.precision = self.crf_joint(mean[-1], inv_cov[-1], muij_)
+        self.loss_joint, self.joint_mean = self.joint_iterative(mean[-1], inv_cov[-1], 
                                     labels, joint_mean)
 
         self.loss_unary = self.loss_total_crf_unary(logits, labels, mean, inv_cov, logdet_invcov)
